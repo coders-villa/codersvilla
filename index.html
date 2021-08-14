@@ -9,15 +9,25 @@
     <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
-    <div class="container-fluid main">
+    <div class="llod" id="load">
+        <div class="loader"></div>
+    </div>
+    <div class="container-fluid main" id="content">
         <div class="col-md-3">
             <div class="welcome">
                 <div class="ceil">
                     WELCOME!
                 </div>
-                <a href="index.html" class="cta"><button>Next</button></a>
+                <a href="./pages/main.html" class="cta"><button>Next</button></a>
             </div>
         </div>
     </div>
+    <script>
+        var load = document.getElementById('load');
+        var unlaod = document.getElementById("content");
+        window.addEventListener("load", function(){
+            load.style.display = "none";
+        })
+    </script>
 </body>
 </html>
